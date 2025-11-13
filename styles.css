@@ -71,6 +71,10 @@ body {
     background-color: sandybrown;
     border-radius: 6px;
     border: 9px solid gold;
+    background: linear-gradient(-45deg, sandybrown 40%, #fafafa 50%, sandybrown 60%);
+    background-size: 400%;
+    background-position-x: 100%;
+    animation: shimmer 1s infinite linear;
 }
 
 .avatar {
@@ -80,4 +84,10 @@ body {
     background-image: url('./images/peaceful-forest-bakground.png');
     background-size: cover;
     border: 5px solid gold;
+}
+
+@keyframes shimmer {
+   to {
+      background-position-x: 0%
+   }
 }
